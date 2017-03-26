@@ -14,7 +14,7 @@ system("CLS");
    for (i=0; i<qtdEleitores; i++) {
 	 	
       printf("Faltam %i eleitores para votar\n\n", restEleitores);
-      printf ("------ Informe seu voto ------ \n 1. Candidato PT \n 2. Candidato PSDB\n ");
+      printf ("------ Informe seu voto ------ \n 1. Candidato PT \n 2. Candidato PSDB\n \n ");
       scanf ("%d", &n);
 	 
 	
@@ -27,15 +27,32 @@ if (n==1) {
  restEleitores--;
  system("CLS");
 }
+printf ("\n-----------------------------------\n");
+
+if (x==1) {
+printf ("Quantidade de votos PT: %d voto \n", x);
+}else {
 printf ("Quantidade de votos PT: %d votos \n", x);
- printf ("Quantidade de votos PSDB: %d votos \n", y);
+}
+if (y==1) {
+printf ("Quantidade de votos PSDB: %d voto \n", y);
+}else {
+printf ("Quantidade de votos PSDB: %d votos \n", y);
+printf ("\n-----------------------------------\n");
+}
  
  if (y>x) {
+ 	printf ("\n-----------------------------------\n");
  	printf ("\n PSDB venceu a eleicao \n \n");
+ 	printf ("\n-----------------------------------\n");
  } else if (y == x) {
-    printf ("Empate. Havera Segundo Turno \n \n");
+ 	printf ("\n-----------------------------------\n");
+    printf ("\n Empate. Havera Segundo Turno \n \n");
+    printf ("\n-----------------------------------\n");
  } else if (y<x) {
+ 	printf ("\n-----------------------------------\n");
   printf ("\n PT venceu a eleicao \n \n ");
+    printf ("\n-----------------------------------\n");
  }
  system ("pause");
 	return 0;	
