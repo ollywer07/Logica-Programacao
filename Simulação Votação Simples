@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+	
+	int x=0, y=0, n, i;
+	int qtdEleitores = 0, restEleitores = 0;
+	
+printf("Informe a quantidade de eleitores que vao votar: ");
+scanf("%i", &qtdEleitores);
+restEleitores = qtdEleitores;
+system("CLS");
+
+	
+   for (i=0; i<qtdEleitores; i++) {
+	 	
+      printf("Faltam %i eleitores para votar\n\n", restEleitores);
+      printf ("------ Informe seu voto ------ \n 1. Candidato PT \n 2. Candidato PSDB\n ");
+      scanf ("%d", &n);
+	 
+	
+if (n==1) {
+   x++; 
+ }
+ else if (n==2) {
+   y++; 
+	}
+ restEleitores--;
+ system("CLS");
+}
+printf ("Quantidade de votos PT: %d votos \n", x);
+ printf ("Quantidade de votos PSDB: %d votos \n", y);
+ 
+ if (y>x) {
+ 	printf ("\n PSDB venceu a eleicao \n \n");
+ } else {
+  printf ("\n PT venceu a eleicao \n \n ");
+ }
+ system ("pause");
+	return 0;	
+}
