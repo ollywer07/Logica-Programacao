@@ -4,10 +4,9 @@
 int main () {
 	
 	int x=0, y=0, n, i;
-	int qtdEleitores = 0, restEleitores = 0;
+	int qtdEleitores = 10, restEleitores = 0;
 	
-printf("Informe a quantidade de eleitores que vao votar: ");
-scanf("%i", &qtdEleitores);
+
 restEleitores = qtdEleitores;
 system("CLS");
 
@@ -33,7 +32,9 @@ printf ("Quantidade de votos PT: %d votos \n", x);
  
  if (y>x) {
  	printf ("\n PSDB venceu a eleicao \n \n");
- } else {
+ } else if (y == x) {
+    printf ("Empate. Havera Segundo Turno \n \n");
+ } else if (y<x) {
   printf ("\n PT venceu a eleicao \n \n ");
  }
  system ("pause");
