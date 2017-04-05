@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main () {
+	
+	int aux, num;
+	
+	printf ("Informe o numero para calculo da fatorial");
+	scanf ("%d", &num);
+	
+   aux = num;
+   while(num > 1)
+   {
+      aux = aux * (num-1);
+      num--;
+   }
+    printf ("%d", aux);
+	
+}
