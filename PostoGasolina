@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main( ) {
+	int tipo;
+	float variavel , litros, valor;
+	puts ("informe o tipo 1 pra alcool e 2 para gasolina");
+	scanf ("%f", &tipo);
+	puts ("informe a quantidade de litros");
+	scanf ("%f" ,&litros );
+	
+	switch(tipo){
+		case1: variavel = 1.90; break;
+		case2: variavel = 2.70; break;	
+	}
+		valor = variavel*litros; 
+		
+			if(tipo == 1){
+				if(litros <= 25){
+					valor = valor*0.98;
+					printf("Valor a ser pago: %f\n", valor);}
+					}	
+				else if(litros > 25){
+					valor = valor*0.96;
+					printf("Valor a ser pago: %f\n", valor);}
+					
+			if(tipo == 2){
+				if(litros <= 25){
+					valor = valor*0.97;
+					printf("Valor a ser pago: %f\n", valor);}
+					}	
+				else if(litros > 25){
+					valor = valor*0.95;
+					printf("Valor a ser pago: %f\n", valor);}		
+
+}
