@@ -1,0 +1,34 @@
+// QUESTÃO DIGITO VERIFICADOR // 
+
+#include<stdio.h>
+
+int main () {
+	
+	int numero;
+	int m, d, c, u;
+	int dig;
+	int resto;
+	
+	printf ("Informe o numero da agencia: \n ");
+	scanf("%d", &numero);
+	
+	if (numero > 9999) {
+		printf ("Digitou um numero que foge os 4 digitos solicitados");
+	}
+	else if (numero < 9999) {
+	
+	
+	m = numero / 1000;;
+	c = numero%1000 / 100;
+	d = ((numero%1000)%100)/10;
+	u= ((numero%1000)%100)%10;
+	
+	dig = (2 * u) + (3 * d) + (4*c) + (5*m);
+	
+	resto = dig % 11;
+	dig = 11-resto;
+	
+	
+	printf (" Agencia Completa:  %d%d%d%d-%d", m,c,d,u,dig);
+    }
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main () {
+
+	int numero;
+	int i;
+	int div;
+	int soma_div=0;
+	
+	printf ("Digite : \n ");
+	scanf("%d", &numero);
+
+	 for (i=1;i<numero;i++) {
+	div = numero % i;
+	
+	if (div == 0) {
+		soma_div = soma_div + i;
+	}
+} 
+ if (soma_div == numero) {
+ 	printf ("numero perfeito");
+ }
+
+	}

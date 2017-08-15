@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main () {
+	
+	int numero1;
+	int numero2;
+	int amigo;
+	int i;
+	int div1, div2;
+	int soma_div1=0, soma_div2=0;
+	int j;
+	
+	printf ("Digite : \n ");
+	scanf("%d", &numero1);
+	
+	printf ("Digite : \n ");
+	scanf("%d", &numero2);
+
+	 for (i=1;i<numero1;i++) {
+	div1 = numero1 % i;
+	
+	if (div1 == 0) {
+		soma_div1 = soma_div1 + i;
+	}
+}
+	 for (j=1;j<numero2;j++) {
+	 div2 = numero2 % j;
+	if (div2 == 0) {
+		soma_div2 = soma_div2 +j;
+	}
+}
+	 if (soma_div2 == numero1 && soma_div1 == numero2) {
+		 
+	printf ("numero amigo \n \n");
+}
+
+printf ("soma div1 : %d \n soma div2: %d \n", soma_div1, soma_div2);
+	}

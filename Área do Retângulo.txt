@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+main(){
+	
+	int base;
+	int altura;
+	int l1, l2, l3, l4;
+	int area, perimetro;
+
+printf ("Informe a base: \n");
+scanf("%d", &base);
+
+printf ("informe a altura: \n");
+scanf("%d", &altura);
+
+printf ("Informe o lado1: \n");
+scanf("%d", &l1);
+
+printf ("Informe o lado2: \n");
+scanf("%d", &l2);
+
+printf ("Informe o lado3: \n");
+scanf("%d", &l3);
+
+printf ("Informe o lado4: \n");
+scanf("%d", &l4);
+
+
+
+
+area = base * altura;
+perimetro = l1 + l2 + l3 + l4;
+
+
+printf ("A area do retangulo eh: %d \n", area);
+
+printf ("O perimetro do retangulo eh: %d \n", perimetro);
+
+
+
+
+}

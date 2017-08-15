@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/* Condição para numero triangular é : 2x3x4 = 24
+                                       2x3x4x5=120
+   sua sequencia precisa ser igual ao numero */
+   
+int main () {
+	
+	int numero;
+	int i;
+	int num=2;
+	int valor;
+	
+	printf ("Digite um numero para verificar se eh triangular: \n");
+	scanf ("%d", &numero);
+	
+	for (i=2;i<=numero;i++) {
+         valor = ((num)*(i+1));
+         num = valor;
+         
+         if (valor == numero)
+          printf ("triangular");
+    
+}
+}

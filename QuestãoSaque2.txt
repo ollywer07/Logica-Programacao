@@ -1,0 +1,38 @@
+#include<stdio.h> 
+
+int main () {
+	
+	
+	int saque, nota1, nota2, nota5, nota10, nota20, nota50, nota100;
+	int i;
+	int resto100, resto50, resto20, resto10, resto5,resto2,resto1;
+	
+	printf ("Informe o valor que deseja sacar: \n ");
+	scanf("%d", &saque);
+	
+	nota100=saque/100;
+	resto100=saque%100;
+	
+	nota50=resto100/50;
+	resto50=resto100%50;
+	
+	nota20=resto50/20;
+	resto20=resto50%20;
+	
+	nota10=resto20/10;
+	resto10=resto20%10;
+	
+	nota5=resto10/5;
+	resto5=resto10%5;
+	
+	nota2=resto5/2;
+	resto2=resto5%2;
+	
+	nota1=resto2/1;
+	resto1=resto2%1;
+	
+
+
+printf ("%d nota 100 \n %d nota 50 \n %d nota 20 \n %d nota 10 \n %d nota 5 \n %d nota 2 \n %d nota 1", nota100, nota50, nota20, nota10, nota5, nota2, nota1);
+
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+main() {
+	int tipo;
+	float area;
+	float valor;
+	float valorAcre;
+	float excedente;
+	
+	puts("Informe o tipo da pulverizacao");
+	scanf("%d", &tipo);	
+	puts("Informe a area a ser pulverizada");
+	scanf("%f", &area);
+	
+	switch(tipo){
+	  case 1 : valorAcre = 50.0; break; 
+	  case 2 : valorAcre = 100.0; break;
+	  case 3 : valorAcre = 150.0; break;
+	  case 4 : valorAcre = 250.0; break;
+	}
+	
+	valor = valorAcre * area;
+	
+	if(area >= 1000)
+	  valor = valor * 0.95;
+	  
+	excedente = valor - 750;
+	if(excedente > 0)
+		valor = valor - (excedente * 0.1); 
+		
+	printf("Valor final: %f\n", valor);	
+}

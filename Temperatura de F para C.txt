@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+main (){
+	float tempF, tempC;
+	float result;
+	
+	printf ("Informe a temperatura em F: ");
+	scanf ("%f", &tempF);
+	
+	tempC = 5*(tempF-32)/9;
+	
+	printf ("Temperatura em C: %f", tempC);
+	
+	
+}
